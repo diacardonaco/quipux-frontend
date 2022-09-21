@@ -14,15 +14,15 @@ export class NavComponent implements OnInit {
   }
 
   goToHome() {
-    this.router.navigate(['/', 'consultHome']);
+    this.router.navigate(['/', 'index']);
   }
   
-  goToCreateClient() {
-    this.router.navigate(['/', 'createClient']);
+  goToCancion() {
+    this.router.navigate(['/', 'cancion']);
   }
 
-  goToConsultClients() {
-    this.router.navigate(['/', 'consultClients']);
+  goToLists() {
+    this.router.navigate(['/', 'lists']);
   }
 
 }

@@ -25,4 +25,12 @@ export class NavComponent implements OnInit {
     this.router.navigate(['/', 'lists']);
   }
 
+  goToCrearCancion() {
+    this.router.navigate(['/', 'crear-cancion']);
+  }
+  
+  goToCrearLista() {
+    this.router.navigate(['/', 'crear-lista']);
+  }
+
 }

@@ -1,0 +1,32 @@
+<form [formGroup]="createForm" class="mx-auto"   (ngSubmit)="onSubmit()">
+
+    <div><p></p></div>
+    <div class="form-group">
+        <label for="disabledTextInput"> Id </label>
+        <input type="number" class="form-control" placeholder="Id" formControlName="id">
+    </div>
+    <div class="form-group">
+        <label for="disabledTextInput"> Titulo </label>
+        <input type="text" class="form-control" placeholder="titulo" formControlName="titulo" >
+    </div>
+    <div class="form-group">
+        <label for="disabledTextInput"> Artista </label>
+        <input type="text" class="form-control" placeholder="artista" formControlName="artista" >
+    </div>
+    <div class="form-group">
+        <label for="disabledTextInput"> Album </label>
+        <input type="text" class="form-control" placeholder="album" formControlName="album">
+    </div>
+    <div class="form-group">
+        <label for="disabledTextInput"> Anno </label>
+        <input type="text"  class="form-control" placeholder="anno" formControlName="anno">
+    </div>
+    <div class="form-group">
+        <label for="disabledTextInput"> Genero </label>
+        <input type="text" class="form-control" placeholder="genero" formControlName="genero">
+    </div>
+   
+    
+    <button type="submit" class="btn btn-primary">Crear Canción</button>
+    
+  </form>

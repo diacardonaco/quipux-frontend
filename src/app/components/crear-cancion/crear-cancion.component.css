@@ -1,0 +1,21 @@
+
+div{
+    margin: 8px;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  ul {
+     top:0; left:0;
+     margin: 0;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  button {
+    text-align: center;
+    justify-content: center;
+  }

@@ -10,6 +10,9 @@ import { CancionComponent } from './components/cancion/cancion.component';
 
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { CancionCardComponent } from './components/cancion-card/cancion-card.component';
+import { CrearCancionComponent } from './components/crear-cancion/crear-cancion.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CrearListaComponent } from './components/crear-lista/crear-lista.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +21,16 @@ import { CancionCardComponent } from './components/cancion-card/cancion-card.com
     ListsComponent,
     IndexComponent,
     CancionComponent,
-    CancionCardComponent
+    CancionCardComponent,
+    CrearCancionComponent,
+    CrearListaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [HttpClientModule],
   bootstrap: [AppComponent]

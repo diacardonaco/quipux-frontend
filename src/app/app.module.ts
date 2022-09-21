@@ -8,6 +8,8 @@ import { ListsComponent } from './components/lists/lists.component';
 import { IndexComponent } from './components/index/index.component';
 import { CancionComponent } from './components/cancion/cancion.component';
 
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,9 +20,10 @@ import { CancionComponent } from './components/cancion/cancion.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

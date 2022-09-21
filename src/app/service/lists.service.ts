@@ -17,6 +17,6 @@ export class ListsService {
    } 
 
    public getAllLists(): Observable<List[]> {
-    return this.http.get<List[]>(this.getAllListsUrl);
+    return this.http.get<List[]>("/lists");
   }
 }

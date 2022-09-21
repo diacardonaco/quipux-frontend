@@ -13,8 +13,7 @@ export class ListsComponent implements OnInit {
 
   constructor(private listsService: ListsService) { }
 
-  ngOnInit(): void {
-    
+  ngOnInit(): void {    
     this.listsService.getAllLists().subscribe(e => this.listsObtained=e);
   }
 

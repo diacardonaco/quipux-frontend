@@ -9,6 +9,7 @@ import { IndexComponent } from './components/index/index.component';
 import { CancionComponent } from './components/cancion/cancion.component';
 
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { CancionCardComponent } from './components/cancion-card/cancion-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     NavComponent,
     ListsComponent,
     IndexComponent,
-    CancionComponent
+    CancionComponent,
+    CancionCardComponent
   ],
   imports: [
     BrowserModule,

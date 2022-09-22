@@ -1,0 +1,14 @@
+<div class="row justify-content-center" style="width: 18rem;" >
+    <div class="card" style="width: 18rem;">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">{{list.id}}</li>
+            <li class="list-group-item">{{list.nombre}}</li>
+            <li class="list-group-item">{{list.descripcion}}</li>
+            <li class="list-group-item">
+                <div clas="clients--grid">
+                    <app-cancion-card [cancion]="cancion" *ngFor="let cancion of list.canciones"></app-cancion-card>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

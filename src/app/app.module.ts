@@ -13,6 +13,7 @@ import { CancionCardComponent } from './components/cancion-card/cancion-card.com
 import { CrearCancionComponent } from './components/crear-cancion/crear-cancion.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CrearListaComponent } from './components/crear-lista/crear-lista.component';
+import { ListCardComponent } from './components/list-card/list-card.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CrearListaComponent } from './components/crear-lista/crear-lista.compon
     CancionComponent,
     CancionCardComponent,
     CrearCancionComponent,
-    CrearListaComponent
+    CrearListaComponent,
+    ListCardComponent
   ],
   imports: [
     BrowserModule,

@@ -3,11 +3,11 @@ import { List } from 'src/app/models/list.model';
 import { ListsService } from 'src/app/service/lists.service';
 
 @Component({
-  selector: 'app-lists',
-  templateUrl: './lists.component.html',
-  styleUrls: ['./lists.component.css']
+  selector: 'app-list-card',
+  templateUrl: './list-card.component.html',
+  styleUrls: ['./list-card.component.css']
 })
-export class ListsComponent implements OnInit {
+export class ListCardComponent implements OnInit {
 
   @Input() list: List = {
 
@@ -26,8 +26,3 @@ export class ListsComponent implements OnInit {
   }
 
 }
-
-
-
-
-

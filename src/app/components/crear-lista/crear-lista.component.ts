@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Cancion } from 'src/app/models/cancion.model';
 import { List } from 'src/app/models/list.model';
 import { ListsService } from 'src/app/service/lists.service';
 
@@ -11,7 +12,15 @@ import { ListsService } from 'src/app/service/lists.service';
 export class CrearListaComponent implements OnInit {
 
   createForm!: FormGroup;
-  listsObtained: List[] | undefined;
+  listsObtained!: List[] | undefined;
+  idCancionesList!: string[] | undefined;
+  idCancionesListInt: number[] | undefined;
+  idCanciones!: string | undefined;
+  songsObtained: Cancion[] | undefined;
+  result: Cancion[] | undefined;
+  songsObtainedFilter: Cancion[] | undefined;
+  idSongsObtained!: number[];
+  cancion!: Cancion;
   
   dataList!: any;
 
@@ -19,17 +28,33 @@ export class CrearListaComponent implements OnInit {
 
   ngOnInit() {
     this.buildForm();
+    this.listsService.getAllSongs().subscribe(e => this.songsObtained=e);
+    this.result = [];
   }
 
 
   onSubmit() {
     if (this.createForm && this.createForm.valid) {
-      console.log("Submitting form: ", this.createForm.value);
       this.dataList =  this.createForm.value;
+      this.idCanciones = this.dataList.canciones;
+
+      var b = this.idCanciones?.split(',').map(function(item) {
+        return parseInt(item, 10);
+      });
+
+      b?.forEach( id => 
+        {
+          this.songsObtained?.forEach( song => {
+            if(song.id == id){
+              this.result?.push(song);
+            }
+          })
+        }) 
+
       this.listsService.createList(new List(this.dataList.id, this.dataList.nombre, this.dataList.descripcion, 
-        this.dataList.canciones)).subscribe(list => this.listsObtained?.push(list));
+        this.result)).subscribe(list => this.listsObtained?.push(list));
     } else {
-      console.error("Form is invalid!");
+      alert("Form invalid!");
     }
   }
 
@@ -41,5 +66,6 @@ export class CrearListaComponent implements OnInit {
       canciones: ["", Validators.required]
     });
   }
+
 
 }

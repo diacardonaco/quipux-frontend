@@ -1,0 +1,21 @@
+div{
+    margin: 8px;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+  }
+
+  p {
+    text-align: center;
+  }
+
+  button {
+    text-align: center;
+    justify-content: center;
+  }

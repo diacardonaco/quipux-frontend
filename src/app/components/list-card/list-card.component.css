@@ -1,0 +1,35 @@
+div{
+    margin: 8px;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  ul {
+    list-style-type: none; 
+    padding: 6px;
+    margin: 6px; 
+    text-align: center;
+    justify-content: center;
+  }
+
+  li {
+     top:0; left:0;
+     margin: 8px;
+     text-align: center;
+    justify-content: center;
+  }
+
+  p {
+    text-align: center;
+    justify-content: center;
+  }
+
+  button {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .box {
+    border: 2px solid rgb(160, 160, 173);
+  }

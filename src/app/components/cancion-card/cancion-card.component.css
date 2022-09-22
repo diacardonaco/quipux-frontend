@@ -1,0 +1,28 @@
+div{
+    margin: 8px;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+
+
+  p {
+    text-align: center;
+    justify-content: center;
+  }
+
+  button {
+    text-align: center;
+    justify-content: center;
+  }
+
+  ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 10px; /* Remove padding */
+    margin: 8px; /* Remove margins */
+  }
+
+  .box {
+    border: 2px solid rgb(160, 160, 173);
+  }
